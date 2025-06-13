@@ -30,13 +30,13 @@ chmod +x system-audit.sh
 ```
 ---
 
-👨‍💻 About Me
+## 👨‍💻 About Me
 
 The reason I made this System Audit Script is the I’m practicing Bash scripting. It was a hands-on way to practice and automate a system check using Bash script.
 
 ---
 
-📫 Contact
+## 📫 Contact
 
 🔗linkedin:"[LinkedIn](www.linkedin.com/in/mohammadsarv)"
 
