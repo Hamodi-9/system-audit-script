@@ -19,7 +19,9 @@ echo
 
 # Memory Info
 echo "🧠 Memory Info:"
-echo "Physical Memory: $(sysctl -n hw.memsize | awk '{print $1/1024/1024/1024 \" GB\"}')"
+mem_bytes=$(sysctl -n hw.memsize)
+mem_gb=$(echo "scale=2; $mem_bytes / 1024 / 1024 / 1024" | bc)
+echo "Physical Memory: $mem_gb GB"
 echo
 
 # Disk Usage
@@ -29,12 +31,12 @@ echo
 
 # Running Processes
 echo "⚙️  Top 5 Running Processes (by memory):"
-ps aux | sort -nk +4 | tail -n 5
+ps aux | sort -nrk 4 | head -n 5
 echo
 
 # Open Ports
 echo "🔐 Open Ports:"
-lsof -i -n | grep LISTEN
+lsof -iTCP -sTCP:LISTEN -n | awk '{print $1, $9}' | sort | uniq
 echo
 
 # Logged In Users
