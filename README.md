@@ -40,4 +40,4 @@ The reason I made this System Audit Script is the I’m practicing Bash scriptin
 
 🔗linkedin:"[LinkedIn](www.linkedin.com/in/mohammadsarv)"
 
-📧email:"[farlow.sarv@gmail.com](mailto:farlow.sarv@gmail.com)"
+📧email:"[Msarv26@@gmail.com](mailto:farlow.sarv@gmail.com)"
